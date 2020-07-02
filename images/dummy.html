@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        .font{
+            font-size: 50px;
+            /*color: rgb(29, 163, 29);*/
+            font-family: 'sans serif';
+            /* color: yellow; */
+        }
+        .font2{
+            font-size: 20px;
+            font-family:'sans serif';
+        }
+    </style>
+</head>
+<body>
+    <section class="text-gray-700 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap" style="background-image: url(/images/background2.png);margin-top: 0%;">
+          <div class="lg:w-1/4 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden"style="margin-top:-7.5%;margin-left:-1.2%">
+            <img alt="feature" class="mySlides" src="/images/Screenshots/whatsapp3.jpg"style="width:100%;height:100%">
+            <img alt="feature" class="mySlides" src="/images/Screenshots/whatsapp2.jpg"style="width:100%;height:100%">
+            <img alt="feature" class="mySlides" src="/images/Screenshots/wp4.jpg"style="width:100%;height:100%">
+            <img alt="feature" class="mySlides" src="/images/Screenshots/wp8.jpg"style="width:100%;height:100%">
+            <img alt="feature" class="mySlides" src="/images/Screenshots/wp6.jpg"style="width:100%;height:100%">
+            <img alt="feature" class="mySlides" src="/images/Screenshots/wp5.jpg"style="width:100%;height:100%">
+            <img alt="feature" class="mySlides" src="/images/Screenshots/wp7.jpg"style="width:100%;height:100%">
+          </div>
+          <div class="flex flex-col flex-wrap lg:py-0 -mb-10 lg:w-2/3 lg:pl-12 lg:text-left text-center">
+            <div class="flex flex-col mb-10 lg:items-start items-center"style="margin-top:-10%">
+                <h1 class="font" >Eduface School App</h1>
+                <div style=" margin-left: 0%;">
+                    <ul class="font2">
+                        <li style="padding-top: 2%;">Eduface school app is built with all the necessary features that are required for an institution to maintain their records with utmost security and can access them from their mobile </li>
+                        <li style="padding-top: 2%;">School App has best user interface which is very interactive for the staff and students through which parents can moniter their chilren academic activities by their handset.</li>
+                        <li style="padding-top: 2%;">Potestas is a school management software which helps school manage complex functions such as fees, results, attendance, timetable, staff, salary, notifications, scholar, documents, diary, etc.
+                            The Potestas App is a revolutionary mobile/tablet communication tool between a school, its students and their parents which helps keep the parents informed, happy and impressed. </li>
+                        <li style="padding-top: 2%;">School App has best user interface which is very interactive for the staff and students through which parents can moniter their chilren academic activities by their handset.</li>
+                        <li style="padding-top: 2%;">Eduface school app is built with all the necessary features that are required for an institution to maintain their records with utmost security </li>
+                        <li style="padding-top: 2%;">School App has best user interface which is very interactive for the staff and students through which parents can moniter their chilren academic activities by their handset.</li>
+                    </ul>    
+                </div>
+          </div>
+        </div>
+      </section>
+      <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>
+</body>
+</html>
